@@ -209,6 +209,7 @@ class HomeTest(ZulipTestCase):
         "realm_moderation_request_channel_id",
         "realm_move_messages_between_streams_limit_seconds",
         "realm_move_messages_within_stream_limit_seconds",
+        "realm_my_amazing_feature",
         "realm_name",
         "realm_name_changes_disabled",
         "realm_new_stream_announcements_stream_id",

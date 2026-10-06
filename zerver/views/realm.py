@@ -191,6 +191,7 @@ def update_realm(
         Json[int | str] | None,
         ApiParamConfig("move_messages_within_stream_limit_seconds"),
     ] = None,
+    my_amazing_feature: Json[bool] | None = None,
     name: Annotated[str | None, StringConstraints(max_length=Realm.MAX_REALM_NAME_LENGTH)] = None,
     name_changes_disabled: Json[bool] | None = None,
     new_stream_announcements_stream_id: Json[int] | None = None,

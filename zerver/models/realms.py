@@ -262,6 +262,9 @@ class Realm(models.Model):
     email_changes_disabled = models.BooleanField(default=False)
     avatar_changes_disabled = models.BooleanField(default=False)
 
+    # My amazing feature for the new feature tutorial.
+    my_amazing_feature = models.BooleanField(default=False, db_default=False)
+
     welcome_message_custom_text = models.TextField(default="")
 
     POLICY_MEMBERS_ONLY = 1
@@ -780,6 +783,7 @@ class Realm(models.Model):
         move_messages_between_streams_limit_seconds=int | None,
         move_messages_within_stream_limit_seconds=int | None,
         message_retention_days=int,
+        my_amazing_feature=bool,
         name=str,
         name_changes_disabled=bool,
         push_notifications_enabled=bool,

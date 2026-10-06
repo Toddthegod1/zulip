@@ -104,6 +104,7 @@ exports.make_realm = (opts = {}) => {
         realm_message_retention_days: 0,
         realm_move_messages_between_streams_limit_seconds: null,
         realm_move_messages_within_stream_limit_seconds: null,
+        realm_my_amazing_feature: false,
         realm_name_changes_disabled: false,
         realm_name: "",
         realm_new_stream_announcements_stream_id: 0,

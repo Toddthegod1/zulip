@@ -5804,6 +5804,12 @@ paths:
                                         **Changes**: New in Zulip 7.0 (feature level 162). Previously, there was
                                         no time limit for moving messages between channels for users with permission
                                         to do so.
+                                    my_amazing_feature:
+                                      type: boolean
+                                      description: |
+                                        When `true`, message content in the web app is displayed in purple.
+
+                                        **Changes**: New in Zulip 13.0 (feature level ZF-8d2e1b).
                                     name:
                                       type: string
                                       description: |
@@ -21042,6 +21048,14 @@ paths:
                           encoded as `null` instead of `-1`. Clients can correctly handle all
                           server versions by treating both `-1` and `null` as indicating
                           unlimited message retention.
+                      realm_my_amazing_feature:
+                        type: boolean
+                        description: |
+                          Present if `realm` is present in `fetch_event_types`.
+
+                          When `true`, message content in the web app is displayed in purple.
+
+                          **Changes**: New in Zulip 13.0 (feature level ZF-8d2e1b).
                       realm_name:
                         type: string
                         description: |

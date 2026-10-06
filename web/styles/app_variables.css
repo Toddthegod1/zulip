@@ -1552,6 +1552,10 @@
         hsl(0deg 0% 15%),
         var(--color-text-default)
     );
+    --color-text-message-my-amazing-feature: light-dark(
+        var(--purple-650),
+        var(--purple-300)
+    );
     --color-text-message-blockquote-border: light-dark(
         hsl(0deg 0% 15% / 25%),
         hsl(0deg 0% 87% / 40%)

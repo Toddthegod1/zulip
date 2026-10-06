@@ -284,6 +284,12 @@
               label=admin_settings_label.realm_inline_url_embed_preview
               help_link="/help/image-video-and-website-previews"}}
             {{/if}}
+
+            {{> settings_checkbox
+              setting_name="realm_my_amazing_feature"
+              prefix="id_"
+              is_checked=realm_my_amazing_feature
+              label=admin_settings_label.realm_my_amazing_feature}}
         </div>
 
         <div id="org-message-retention" class="settings-subsection-parent">

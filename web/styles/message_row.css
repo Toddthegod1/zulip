@@ -1404,3 +1404,7 @@
         vertical-align: -0.1429em; /* -2px at 14px/1em */
     }
 }
+
+.my-amazing-feature {
+    --color-text-message-default: var(--color-text-message-my-amazing-feature);
+}

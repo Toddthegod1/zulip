@@ -83,6 +83,7 @@ import * as message_viewport from "./message_viewport.ts";
 import * as modals from "./modals.ts";
 import * as mouse_drag from "./mouse_drag.ts";
 import * as muted_users from "./muted_users.ts";
+import * as my_amazing_feature from "./my_amazing_feature.ts";
 import * as narrow_history from "./narrow_history.ts";
 import * as narrow_state from "./narrow_state.ts";
 import * as narrow_title from "./narrow_title.ts";
@@ -480,6 +481,7 @@ export async function initialize_everything(state_data) {
     i18n.initialize({language_list: page_params.language_list});
     timerender.initialize();
     information_density.initialize();
+    my_amazing_feature.update_message_text_color();
     if (page_params.is_spectator) {
         theme.initialize_theme_for_spectator();
     }

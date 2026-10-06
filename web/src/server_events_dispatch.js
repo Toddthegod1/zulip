@@ -37,6 +37,7 @@ import * as message_reminder from "./message_reminder.ts";
 import * as message_store from "./message_store.ts";
 import * as message_view from "./message_view.ts";
 import * as muted_users_ui from "./muted_users_ui.ts";
+import * as my_amazing_feature from "./my_amazing_feature.ts";
 import * as narrow_title from "./narrow_title.ts";
 import * as navbar_alerts from "./navbar_alerts.ts";
 import * as navigation_views from "./navigation_views.ts";
@@ -354,6 +355,7 @@ export function dispatch_normal_event(event) {
                 move_messages_between_streams_limit_seconds: noop,
                 move_messages_within_stream_limit_seconds: message_edit.update_inline_topic_edit_ui,
                 message_retention_days: noop,
+                my_amazing_feature: my_amazing_feature.update_message_text_color,
                 name: narrow_title.redraw_title,
                 name_changes_disabled: settings_account.update_name_change_display,
                 new_stream_announcements_stream_id: stream_ui_updates.update_announce_stream_option,
